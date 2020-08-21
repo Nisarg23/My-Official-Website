@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Nisarg Patel</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
+    
+  </head>
+<body >
+     <div class="navbar">
+      <div class="left">
+        <div class="logo"><img src="images/My_Logo2_small.png"></div>
+
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="sidebar1">×</a>
+          <hr>
+          <a href="#about" id="sidebar2">About Me</a>
+          <hr>
+          <a href="#projects" id="sidebar3">Projects</a>
+          <hr>
+          <a href="#snake" id="sidebar4">Snake Game</a>
+          <hr>
+          <a href="" id="sidebar5">Resume</a>
+          <hr>  
+        </div>
+        
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">☰</button>  
+        </div>
+        
+      </div>
+
+      <div class="center">
+        <ul>
+          <li><a href="#about" id="navBar1">About Me </a></li>
+          <li><a href="#projects" id="navBar2">Projects </a></li>
+          <li><a href="#snake" id="navBar3">Snake Game </a></li>
+          <li><a href="" id="navBar4">Resume </a></li>
+        </ul> 
+      </div>
+
+      <div class="right">
+        <ul class="icons">
+          <li><i class="fab fa-facebook-f" onclick="OpenFacebook()" title="lets be frineds"> </i></li>
+          <li><i class="fab fa-instagram" onclick="OpenInstagram()" title="check out my life"></i></li>
+          <li><i class="fab fa-linkedin-in" onclick="OpenLinkedin()" title="connect with me on LinkedIn" ></i> </li>
+        </ul>
+      </div>
+    <!-- end of navbar--></div>
+  <div class="space_img">
+    <div class="name">N i s a r g &nbsp&nbsp&nbspP a t e l</div>
+ <!-- end of space div--> </div>
+
+ <div class="about" id="about">
+   <div class="box1">
+     <div class="image1">
+
+     </div>
+    </div>
+   <div class="box2">
+    <div class="text_wrapper2">
+      "Hi my name is Nisarg Patel. I'm an aspiring software engineering student 
+      that studies at the University of Ottawa. I have experience with web and app development, and enjoy photo and video
+      editing in my spare time. Check out my resume here! "
+    </div> 
+  </div>
+   
+    <div class="box3">
+      <div class="text_wrapper3">
+        "I enjoy playing and watching various types of sports: basketball, volleyball
+      , cricket, badminton. One of the best days of my life was when the day
+      Kawhi Leonard clutched his iconic buzzer beater to send Toronto to the semi-finals. This year
+      I'm hoping for a Raptors 2-peat! "
+      <div class="raptors_logo">
+        <img src="images/raptors_logo.png">
+      </div>
+      </div> 
+
+      
+    
+    </div>
+   <div class="box4">
+    <div class="image4">
+       
+    </div>
+   </div>
+   <div class="box5">
+    <div class="image5">
+       
+    </div>
+   </div>
+   <div class="box6">
+    <div class="text_wrapper6">
+      " The only game I play is Clash Royale. The best competitve mobile game out there!"
+     <br>
+     Current Rank: 
+    </div> 
+  </div>
+ <!-- end of about div--> </div>
+
+ <div class="projects" id="projects">
+
+  <!-- end of projects div--></div>
+
+  <div class="snake">
+    <canvas id="snake" class="inner" width="608" height="608"></canvas>
+    <div class="start_screen inner" id="start_screen">
+      <button class="play" id="play" onclick="rank()"> play</button>
+    </div>
+     
+  
+  <!-- end of snake div--></div>
+  <table id="table"></table>
+  <script  src="script.js" >
+  </script>
+  <script type="module" src="server.js" >
+  </script>
+ 
+
+</body>
+</html>

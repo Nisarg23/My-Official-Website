@@ -1,0 +1,415 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #ccc;
+  margin: 0;
+  padding: 0;
+  }
+
+
+/* header */
+.navbar{
+  list-style: none;
+  text-align: center;
+  background-image: linear-gradient(to top, rgba(117, 100, 100, 0.993) , rgb(44, 44, 43));
+  padding: 0;
+  margin: 0;
+  height: 50px;
+}
+
+.navbar > div{
+  height: 50px;
+  float: left;
+}
+.navbar .left{
+
+  width: 20%;
+}
+.navbar .center{
+  width: 60%;
+}
+.navbar .center ul, .navbar .right ul{
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.navbar .center li, .navbar .right li {
+  display: inline-block;
+}
+.navbar .center li a{
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px;
+  display: block;
+  font-size: 17px;
+  font-family: Helvetica,Arial,  sans-serif;
+  width: 100px;
+  
+}
+.navbar .center li a:hover{
+  background-color: rgb(110, 110, 109);
+  transition: 0.5s;
+
+}
+.navbar .right{
+  width: 20%;
+}
+
+
+
+
+
+.navbar .right ul{
+  display: flex;
+}
+.navbar .right ul li{
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    line-height: 50px;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+.navbar .right ul li:nth-child(1):before{
+  background: #4267B2;
+}
+.navbar .right ul li:nth-child(2):before{
+  background: #1DA1F2;
+}
+.navbar .right ul li:nth-child(3):before{
+  background: #E1306C;
+}
+
+.navbar .right ul li:hover:before{
+  filter: blur(3px);
+  transform: scale(1.2);
+  /* box-shadow: 0 0 15px #d35400; */
+}
+.navbar .right ul li:nth-child(1):hover{
+  color: #456cba;
+  
+  text-shadow: 0 0 15px #4267B2;
+}
+.navbar .right ul li:nth-child(2):hover{
+  color: #e23670;
+  
+  text-shadow: 0 0 15px #E1306C;
+}
+.navbar .right ul li:nth-child(3):hover{
+ 
+  color: #26a4f2;
+  text-shadow: 0 0 15px #1DA1F2;
+}
+
+
+
+@media (max-width: 890px){
+  .navbar .center li a{
+    color: #ffffff;
+    padding: 5px;
+    padding-top: 15px;
+    display: block;
+    font-size: 15px;
+    font-family: Helvetica,Arial,  sans-serif;
+    width: 100px;
+    height: 30px;
+  }
+
+}
+@media (max-width: 760px){
+  .logo img{
+    display: none;
+  }
+  .navbar .left{
+    width: 0%;
+  }
+  .navbar .center{
+    width: 70%;
+  }
+  .navbar .right{
+    width: 30%;
+  }
+  .navbar .center ul, .navbar .right ul{
+    text-align: left;  
+  }
+  .navbar .center li{
+    text-align: center;
+  }
+}
+
+#mySidebar, #main{
+  display: none;
+}
+@media (max-width: 650px){
+  .navbar .center li a{
+    color: #ffffff;
+    padding: 2px;
+    padding-top: 15px;
+    display: block;
+    font-size: 12px;
+    font-family: Helvetica,Arial,  sans-serif;
+    width: 90px;
+    height: 32px;
+  }
+}
+@media (max-width: 600px){
+  .navbar .center li a{
+    color: #ffffff;
+    padding: 0px;
+    padding-top: 15px;
+    display: block;
+    font-size: 10px;
+    font-family: Helvetica,Arial,  sans-serif;
+    width: 80px;
+    height: 32px;
+  }
+
+  .navbar .right ul li{
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    line-height: 50px;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+  
+}
+@media (max-width: 500px){
+  .navbar .left{
+    width: 40%;
+  }
+  .navbar .right{
+    width: 60%;
+  }
+  .navbar .right li{
+    float: right;
+  }
+  .navbar .center{
+    display: none;
+  }
+  #main{
+    display: flex;
+    width: 20px;
+    height: 25px;
+  }
+  #mySidebar{
+    display: block;
+  }
+
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    background-color: #111;
+    color: white;
+    height: 50px;
+    width: 700px;
+  }
+  
+  
+}/* end of navbar  */
+
+.space_img{
+  width: 100%;
+  height: 550px;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("images/Winter2.jpeg");
+  padding: 0;
+  margin: 0;
+  /* display: inline-block; */
+  position: relative;
+  animation: shrink 10s infinite alternate;
+  animation-timing-function: ease-in-out;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+@keyframes shrink {
+  0%{
+    background-size: 100% 100%;
+  }
+  100%{
+    background-size: 110% 110%;
+  }
+
+}
+
+.name{
+  font-size: 80px;
+  color: white;
+  font-family: 'Chicle', cursive;
+  text-decoration: none !important;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: fade-in 15s;
+}
+
+@keyframes fade-in{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+/* end of space div  */
+
+
+.about{
+  height: 1250px;
+}
+
+.box1, .box2
+, .box5, .box6{
+float: left;
+width: 50%;
+height: 25%;
+text-align: center;
+}
+.box3, .box4{
+float: left;
+width: 50%;
+height: 50%;
+text-align: center;
+}
+
+.text_wrapper6, .text_wrapper2{
+  font-size: 25px;
+  color: black;
+  font-family: 'Chicle', cursive;
+  line-height: 50px;
+  margin-top: 40px;
+  
+}
+
+.text_wrapper3{
+  font-size: 25px;
+  color: black;
+  font-family: 'Chicle', cursive;
+  line-height: 50px;
+  margin-left: 60px;
+  margin-top: 80px;
+  width: 75%;
+  height: 75%;
+}
+
+.image1{
+background-image: url("images/uottawa.jpg");
+background-repeat: no-repeat; 
+height: 168px;
+width: 300px;
+margin-top: 50px;
+margin-left: 150px;
+border-radius: 40px;
+}
+
+.image4{
+  background-image: url("images/Athletic_Awards.jpg");
+  background-repeat: no-repeat; 
+  height: 368px;
+  width: 350px;
+  margin-top: 75px;
+  margin-left: 150px;
+  border-radius: 40px;
+  }
+
+.image5{
+  background-image: url("images/clash_royale.jpg");
+  background-repeat: no-repeat; 
+  height: 168px;
+  width: 300px;
+  margin-top: 50px;
+  margin-left: 150px;
+  border-radius: 40px;
+  }
+
+
+/* end of about  */
+
+.projects{
+  background-color: orange;
+  height: 500px;
+}
+.snake{
+  background-color: white;
+  height: 600px;
+  position: relative;
+  text-align: center;
+}
+
+ canvas{
+  width:100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.start_screen{
+  background-color: black;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.inner{
+  position: absolute;
+}
+
+.play{
+  width: 120px;
+  font-size: 20px;
+  margin-top: 300px;
+  border: 1px solid black;
+}
+
