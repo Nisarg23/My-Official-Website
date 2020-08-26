@@ -376,8 +376,8 @@ border-radius: 40px;
 /* end of about  */
 
 .projects{
-  background-color: orange;
-  height: 500px;
+  background-color: white;
+  height: 1000px;
 }
 .snake{
   background-color: white;
@@ -413,3 +413,29 @@ border-radius: 40px;
   border: 1px solid black;
 }
 
+.Box1, .Box2, .Box3
+,.Box4, .Box5, .Box6{
+float: left;
+width: 50%;
+height: 33%;
+text-align: center;
+
+}
+
+.Box6 .img3,.Box3 .img2, .Box2 .img1{
+  display: inline-block;
+  margin-top: 60px;
+}
+
+#i1,#i2,#i3 {
+  border-radius: 40px;
+}
+
+
+.Box1 .text_wrapper1, .Box3 .text_wrapper2, .Box6 .text_wrapper3{
+  font-size: 25px;
+  color: black;
+  font-family: 'Chicle', cursive;
+  line-height: 50px;
+  margin-top: 40px;
+}

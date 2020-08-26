@@ -9,6 +9,7 @@
     
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
     
   </head>
@@ -105,13 +106,52 @@
  <!-- end of about div--> </div>
 
  <div class="projects" id="projects">
-
+<div class="Box1">
+<div class="text_wrapper1">
+  The Clash Royale Base app is an android app built on Android Studio using Java.
+  This app is an accesories app for Clash Royale players who want to learn
+  more about the meta, and player stats. Clash Royale Base establishes an HttpURLConnection
+  to get the api Json content from https://api.clashroyale.com/v1/.<br>
+  Publish Date: Coming Soon (waiting for permission from Clash Royale) 
+</div>
+</div>
+<div class="Box2">
+  <div class="img1">
+    <img src="images/clash_royale (2).jpg" id="i1">
+  </div>
+</div>  
+<div class="Box3">
+<div class="img2">
+  <img src="images/sudoku.png" id="i2">
+</div>
+</div>
+<div class="Box4">
+<div class="text_wrapper2">
+  This is my gui implemnetaion of the sudoku puzzle game using the pygame module
+  in Python. The randomizer uses mulitple sorting algorithms to generate a random board.
+   The solver uses a backtracking recursive algorithm which searches for the closet empty cell
+   and adds a valid number. If there are no valid numbers availbe the alogrithm backtracks to a previous
+   cell and modifies it and repeats the process until the board is solved.
+</div>
+</div>  
+<div class="Box5">
+  <div class="text_wrapper3">
+    The Automate Excel script uses openpyxl to manage all tasks in excel spreadsheets.
+    This program uses input questions to automate a file, then it modifies the file
+    adding, formating, and organzing elements as required.   
+  </div>
+</div>      
+<div class="Box6">
+<div class="img3">
+  <img src="images/automate_excel.png" id="i3">
+</div>
+</div>
   <!-- end of projects div--></div>
 
   <div class="snake">
     <canvas id="snake" class="inner" width="608" height="608"></canvas>
     <div class="start_screen inner" id="start_screen">
-      <button class="play" id="play" onclick="rank()"> play</button>
+      <button class="play" id="play" onclick="play()"> play</button>
     </div>
      
   
@@ -119,9 +159,6 @@
   <table id="table"></table>
   <script  src="script.js" >
   </script>
-  <script type="module" src="server.js" >
-  </script>
- 
 
 </body>
 </html>
